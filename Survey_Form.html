@@ -1,0 +1,83 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Survey Form</h1>
+  <p id="description"><b>Note:</b> <b>Form is to be completed at least 10 days prior to date<b></p>
+   <div>
+
+  <!-- -----------------Personal Details---------------------------- -->
+  <fieldset>
+    <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+    <legend><<h2>Personal Details</h2></legend>
+    <!-- formally describes the purpose of the fieldset it is included inside. -->
+    <br/>
+    <div>
+      <label id="name-label" for="name"><b>Name:<b></label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter your name">
+     </div>
+     <br/>
+     <br/>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">  
+     </div
+      <br/>
+      <br/>
+      <br/>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9"> 
+    </div>
+    <br/>
+    <br/>
+    <div>
+       <!-- -----------------Dropdown menus--------------------------------- -->
+
+
+  <label for="Education">Education Level Completed:</label>
+  <select id="dropdown">
+  <option value="University">University</option>
+  <option value="College">College</option>
+  <option value="Secondary">High School</option>
+  <option value="None">None</option>
+  </select>
+    </div>
+  <br/>
+  <br/>
+      <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+      <br/>
+
+    <label for="Gender">Requiarement</label>
+    <p>
+      <input type="checkbox" name="Degree" value="Degree"> I have Bachelo degree or not<br>
+      <input type="checkbox" name="age" value="age"> I am more than 30 years<br>
+      <input type="checkbox" name="grade" value="grade"> I have a very good grade<br>
+      <input type="checkbox" name="work" value="work" checked> I work full-time<br>
+      <input type="checkbox" name="hobby" value="hobby" checked> My hobby is reading and singing<br>
+
+    </p>
+
+  <!-- --------------------Text Areas------------------------------ -->
+
+  <fieldset>
+    <legend>Add a Comment</legend>
+    <div>
+      <label for="msg"></label>
+      <p> In 50 words or more add a comment if we need to improve the fomat of our survey form.</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>  
+    </div>
+ </fieldset>
+   <br/>
+   <br/>
+  <div id="submitbutton">
+    <button type="submit" id="submit">Summit</button>  
+  </div>
+
+</form>
